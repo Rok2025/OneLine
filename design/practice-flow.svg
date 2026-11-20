@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="737" viewBox="0 0 1320 737" role="img" aria-labelledby="title desc">
+<title id="title">OneLine · Realtime 练习流程</title>
+<desc id="desc">同一局域网内，安卓 OneLine 直接上传录音到 Mac。Mac 调用 OpenAI Realtime 后把文字和语音返回手机。</desc>
+<style>
+  text { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", system-ui, sans-serif; }
+</style>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0 0 L10 5 L0 10 Z" fill="#155D4D"/>
+  </marker>
+  <g id="mic" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round">
+    <rect x="8.5" y="2.5" width="7" height="13" rx="3.5"/>
+    <path d="M5 10.5v2a7 7 0 0 0 14 0v-2M12 19.5v3M9 22.5h6"/>
+  </g>
+  <g id="speaker" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 9h4l5-4v14l-5-4H3zM15 9a4 4 0 0 1 0 6M18 6a8 8 0 0 1 0 12"/>
+  </g>
+</defs>
+<rect x="0" y="0" width="1320" height="737" rx="0" fill="#F2F0E7" stroke="none"/>
+<text x="52" y="66" font-size="39" fill="#172E29" font-weight="760" text-anchor="start">OneLine</text>
+<text x="52" y="108" font-size="27" fill="#172E29" font-weight="700" text-anchor="start">说一句，听一句</text>
+<text x="1268" y="66" font-size="15" fill="#50655F" font-weight="550" text-anchor="end">同一 Wi-Fi 直连 · Realtime 安卓原型</text>
+<rect x="52" y="154" width="378" height="231" rx="21" fill="#FAF9F4" stroke="#D7DED4"/>
+<text x="72" y="186" font-size="16" fill="#155D4D" font-weight="700">安卓 · OneLine</text>
+<rect x="70" y="204" width="342" height="155" rx="13" fill="#FFFFFF" stroke="#D7DED4"/>
+<text x="87" y="242" font-size="23" fill="#172E29" font-weight="700">录音与播放</text>
+<text x="87" y="276" font-size="15" fill="#50655F">拇指松开后，把录音发到 Mac</text>
+<text x="87" y="301" font-size="15" fill="#50655F">显示原句和推荐美语</text>
+<text x="87" y="326" font-size="15" fill="#50655F">自动播放本轮语音，可重听</text>
+<rect x="471" y="154" width="378" height="231" rx="21" fill="#FAF9F4" stroke="#D7DED4"/>
+<text x="491" y="186" font-size="16" fill="#155D4D" font-weight="700">Mac · OneLineServer</text>
+<rect x="489" y="204" width="342" height="155" rx="13" fill="#FFFFFF" stroke="#D7DED4"/>
+<text x="506" y="242" font-size="23" fill="#172E29" font-weight="700">处理这一句</text>
+<text x="506" y="276" font-size="15" fill="#50655F">接收局域网请求，转换录音格式</text>
+<text x="506" y="301" font-size="15" fill="#50655F">调用 Realtime，整理文字和 WAV</text>
+<text x="506" y="326" font-size="15" fill="#50655F">从原请求把结果返回手机</text>
+<rect x="890" y="154" width="378" height="231" rx="21" fill="#E2F0E8" stroke="#D7DED4"/>
+<text x="910" y="186" font-size="16" fill="#155D4D" font-weight="700">OpenAI · Realtime</text>
+<rect x="908" y="204" width="342" height="155" rx="13" fill="#FFFFFF" stroke="#D7DED4"/>
+<text x="925" y="242" font-size="23" fill="#172E29" font-weight="700">转写与表达</text>
+<text x="925" y="276" font-size="15" fill="#50655F">返回原话的文字转写</text>
+<text x="925" y="301" font-size="15" fill="#50655F">给出一句推荐美语</text>
+<text x="925" y="326" font-size="15" fill="#50655F">返回推荐句的音频和文字</text>
+<path d="M417 290 H484" stroke="#155D4D" stroke-width="2" fill="none" stroke-linecap="round" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M836 290 H903" stroke="#155D4D" stroke-width="2" fill="none" stroke-linecap="round" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="52" y="414" font-size="15" fill="#50655F">两端做好后一起联调。手机填入 Mac 的局域网地址，检查连通性后上传录音。</text>
+<text x="52" y="453" font-size="23" fill="#172E29" font-weight="700" text-anchor="start">真机原型先验证什么</text>
+<rect x="52" y="475" width="378" height="135" rx="16" fill="#FAF9F4" stroke="#D7DED4"/>
+<text x="74" y="514" font-size="22" fill="#172E29" font-weight="700" text-anchor="start">重听</text>
+<text x="74" y="548" font-size="16" fill="#50655F" font-weight="400" text-anchor="start">直接播放本轮音频，可以自行口头跟读。</text>
+<text x="74" y="575" font-size="16" fill="#50655F" font-weight="400" text-anchor="start">再按住麦克风，开始练新的一句。</text>
+<rect x="471" y="475" width="378" height="135" rx="16" fill="#FAF9F4" stroke="#D7DED4"/>
+<text x="493" y="514" font-size="22" fill="#172E29" font-weight="700" text-anchor="start">表达质量</text>
+<text x="493" y="548" font-size="16" fill="#50655F" font-weight="400" text-anchor="start">试中文、需要修改的英文、自然英文。</text>
+<text x="493" y="575" font-size="16" fill="#50655F" font-weight="400" text-anchor="start">检查转写是否如实，推荐句是否自然。</text>
+<rect x="890" y="475" width="378" height="135" rx="16" fill="#FAF9F4" stroke="#D7DED4"/>
+<text x="912" y="514" font-size="22" fill="#172E29" font-weight="700" text-anchor="start">实际等待时间</text>
+<text x="912" y="548" font-size="16" fill="#50655F" font-weight="400" text-anchor="start">先测同一 Wi-Fi 下的完整练习。</text>
+<text x="912" y="575" font-size="16" fill="#50655F" font-weight="400" text-anchor="start">记录松手到手机扬声器出声的时间。</text>
+<path d="M52 649 H1268" stroke="#D7DED4" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="52" y="683" font-size="15" fill="#155D4D" font-weight="700" text-anchor="start">原型跑通后</text>
+<text x="174" y="683" font-size="16" fill="#172E29" font-weight="400" text-anchor="start">加入转写编辑、纠错解释和默认桌面入口。</text>
+
+</svg>
